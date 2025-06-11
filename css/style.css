@@ -82,16 +82,6 @@ header nav {
   background-color: rgb(39, 38, 38);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.cajaBajo1,
-.cajaBajo2 {
-  /* width: 95%; */
-  width: 49%;
-}
-.cajaBajo1 {
-  display: flex;
-  flex-direction: column;
-  /* margin-bottom: 5px; */
-}
 .titleBanner {
   padding: 30px;
   background-color: rgb(186, 209, 147);
@@ -102,9 +92,17 @@ header nav {
 .titleBanner h2 {
   font-weight: 900;
 }
+.cajaBajo1,
+.cajaBajo2 {
+  width: 49%;
+}
+.cajaBajo1 {
+  display: flex;
+  flex-direction: column;
+}
+
 .cajaBajo1 img {
   width: 100%;
-  /* height: 58%; */
 }
 .cajaBajo2 {
   display: flex;
@@ -123,6 +121,8 @@ header nav {
   width: 100%;
   height: 49%;
 }
+
+/*  */
 /* seccion1 */
 #seccion1 {
   margin-top: 10px;
@@ -198,7 +198,7 @@ footer img {
 
 .gridGalery .gridItem {
   width: 100%;
-  height: 200px; /* altura fija para todos los ítems */
+  height: 200px;
   overflow: hidden;
 }
 

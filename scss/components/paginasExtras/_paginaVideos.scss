@@ -1,0 +1,11 @@
+#seccionVideos {
+  div {
+    display: flex;
+    justify-content: center;
+    video {
+      margin: 10px;
+      width: 45%;
+      border-radius: 5px;
+    }
+  }
+}

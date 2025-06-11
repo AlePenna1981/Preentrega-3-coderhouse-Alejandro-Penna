@@ -1,0 +1,161 @@
+// Media queries
+@media screen and (max-width: 942px) {
+  #infoEmpresa {
+    div {
+      padding: 20px;
+      margin: 10px 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 858px) {
+  #infoServicios {
+    padding: 20px;
+    width: 90%;
+  }
+  #banner {
+    width: 90%;
+  }
+  #headerPginasExtras {
+    display: block;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .contactServices {
+    display: block;
+    margin-right: 70px;
+
+    a h5 {
+      margin: 10px 20px;
+    }
+  }
+
+  #banner {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #infoServicios {
+    padding: 20px;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  #infoServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      margin-top: 19px;
+    }
+  }
+  #headerPginasExtras {
+    h1 {
+      margin: auto;
+    }
+    nav {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .contactServices {
+    display: block;
+    margin-right: 0;
+  }
+  .botonContacto {
+    padding: 5px 20px;
+    text-decoration: none;
+  }
+  #banner {
+    display: block;
+    .cajaBajo1,
+    .cajaBajo2 {
+      width: 100%;
+    }
+    .cajaBajo1 {
+      margin-bottom: 10px;
+    }
+  }
+
+  #infoEmpresa {
+    div {
+      padding: 10px;
+      margin: 10px 50px;
+    }
+  }
+  #seccionContacto h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  header {
+    display: block;
+    h1 {
+      margin: auto;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+    }
+  }
+  #seccionContacto h1 {
+    font-size: 2em;
+  }
+  #seccionClases h1,
+  #seccionProduccion h1 {
+    font-size: 2.4em;
+  }
+
+  .contactServices {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    a h5 {
+      margin-right: 20px;
+      margin-top: 0;
+    }
+  }
+  #headerPginasExtras {
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        margin-bottom: 1px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contactServices {
+    display: block;
+    margin-right: 0;
+  }
+  #seccionContacto h1 {
+    font-size: 1.7em;
+  }
+  #seccionClases h1,
+  #seccionProduccion h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #infoEmpresa {
+    div {
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+// GENERAL
+@import "./base/generales";
+// ----
+
+// PAGINA PPRINCIPAL
+@import "./components/paginaPrincipal/1header";
+@import "./components/paginaPrincipal/2banner";
+@import "./components/paginaPrincipal/3infoEmpresa";
+@import "./components/paginaPrincipal/4infoServicios";
+@import "./components/paginaPrincipal/5footer";
+// ----
+
+// PAGINAS EXTRA
+@import "./base/generalesPaginasExtra";
+@import "./components/paginasExtras/paginaContacto";
+@import "./components/paginasExtras/paginaLecciones";
+@import "./components/paginasExtras/paginaProduccion";
+@import "./components/paginasExtras/paginaVideos";
+// ----
+
+// QUERYS
+@import "./base/querys";

@@ -1,0 +1,69 @@
+// header
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+
+  h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 3em;
+    margin-left: 30px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: rgb(72, 71, 71);
+
+    &::first-letter {
+      font-size: 1.7em;
+      font-weight: 900;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    a {
+      width: 144px;
+    }
+  }
+}
+
+.letraB {
+  font-size: 1.7em;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.contactServices {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+
+  a {
+    text-decoration: none;
+
+    h5 {
+      color: rgb(95, 170, 95);
+      margin: 0 20px;
+    }
+  }
+}
+
+.botonContacto {
+  border: none;
+  background-color: rgb(19, 152, 152);
+  color: aliceblue;
+  border-radius: 9px;
+  padding: 7px 28px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgb(17, 97, 97);
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  a {
+    color: aliceblue;
+  }
+}

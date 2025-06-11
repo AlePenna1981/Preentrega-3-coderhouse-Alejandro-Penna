@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900&family=Roboto:ital,wght@0,100..900&family=Special+Gothic&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+header h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3em;
+  margin-left: 30px;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: rgb(72, 71, 71);
+}
+header h1::first-letter {
+  font-size: 1.7em;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+header nav a {
+  width: 144px;
+}
+
+.letraB {
+  font-size: 1.7em;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.contactServices {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.contactServices a {
+  text-decoration: none;
+}
+.contactServices a h5 {
+  color: rgb(95, 170, 95);
+  margin: 0 20px;
+}
+
+.botonContacto {
+  border: none;
+  background-color: rgb(19, 152, 152);
+  color: aliceblue;
+  border-radius: 9px;
+  padding: 7px 28px;
+  text-decoration: none;
+}
+.botonContacto:hover {
+  background-color: rgb(17, 97, 97);
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.botonContacto a {
+  color: aliceblue;
+}
+
+#banner {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(39, 38, 38);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#banner .titleBanner {
+  padding: 30px;
+  background-color: rgb(186, 209, 147);
+  text-align: start;
+  margin-bottom: 10px;
+  color: rgb(55, 54, 54);
+}
+#banner .titleBanner h2 {
+  font-weight: 900;
+}
+#banner .cajaBajo1,
+#banner .cajaBajo2 {
+  width: 49%;
+}
+#banner .cajaBajo1 {
+  display: flex;
+  flex-direction: column;
+}
+#banner .cajaBajo1 img {
+  width: 100%;
+}
+#banner .cajaBajo2 {
+  display: flex;
+  justify-content: space-around;
+}
+#banner .cajaBajo2 img {
+  width: 46%;
+}
+#banner .cajaBajo3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+#banner .cajaBajo3 img {
+  width: 100%;
+  height: 49%;
+}
+
+#infoEmpresa {
+  margin-top: 10px;
+  padding-top: 20px;
+}
+#infoEmpresa div {
+  padding: 40px;
+  margin: 10px 300px;
+}
+
+#infoServicios {
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  background-image: url("../img/music production.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: silver;
+}
+footer img {
+  width: 4em;
+  border-radius: 50px;
+}
+
+.whatsappLogo {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+#seccionContacto,
+#seccionClases,
+#seccionProduccion,
+#seccionVideos {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 40px;
+  background-color: lightgreen;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 70%;
+}
+#seccionContacto div ul,
+#seccionClases div ul,
+#seccionProduccion div ul,
+#seccionVideos div ul {
+  margin-right: 30px;
+  list-style: none;
+}
+#seccionContacto h1,
+#seccionContacto h2,
+#seccionContacto ul,
+#seccionClases h1,
+#seccionClases h2,
+#seccionClases ul,
+#seccionProduccion h1,
+#seccionProduccion h2,
+#seccionProduccion ul,
+#seccionVideos h1,
+#seccionVideos h2,
+#seccionVideos ul {
+  margin-bottom: 20px;
+}
+
+#headerPginasExtras {
+  display: flex;
+  align-items: center;
+}
+#headerPginasExtras h1 {
+  margin-left: 50px;
+}
+#headerPginasExtras nav a {
+  background-color: aquamarine;
+  padding: 10px;
+  margin-left: 2px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.gridGalery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.gridGalery .gridItem {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.gridGalery .gridItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#seccionVideos div {
+  display: flex;
+  justify-content: center;
+}
+#seccionVideos div video {
+  margin: 10px;
+  width: 45%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 942px) {
+  #infoEmpresa div {
+    padding: 20px;
+    margin: 10px 100px;
+  }
+}
+@media screen and (max-width: 858px) {
+  #infoServicios {
+    padding: 20px;
+    width: 90%;
+  }
+  #banner {
+    width: 90%;
+  }
+  #headerPginasExtras {
+    display: block;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 720px) {
+  .contactServices {
+    display: block;
+    margin-right: 70px;
+  }
+  .contactServices a h5 {
+    margin: 10px 20px;
+  }
+  #banner {
+    width: 100%;
+    border-radius: 0;
+  }
+  #infoServicios {
+    padding: 20px;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 622px) {
+  #infoServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #infoServicios div {
+    margin-top: 19px;
+  }
+  #headerPginasExtras h1 {
+    margin: auto;
+  }
+  #headerPginasExtras nav {
+    display: block;
+  }
+}
+@media screen and (max-width: 530px) {
+  .contactServices {
+    display: block;
+    margin-right: 0;
+  }
+  .botonContacto {
+    padding: 5px 20px;
+    text-decoration: none;
+  }
+  #banner {
+    display: block;
+  }
+  #banner .cajaBajo1,
+  #banner .cajaBajo2 {
+    width: 100%;
+  }
+  #banner .cajaBajo1 {
+    margin-bottom: 10px;
+  }
+  #infoEmpresa div {
+    padding: 10px;
+    margin: 10px 50px;
+  }
+  #seccionContacto h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 472px) {
+  header {
+    display: block;
+  }
+  header h1 {
+    margin: auto;
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  #seccionContacto h1 {
+    font-size: 2em;
+  }
+  #seccionClases h1,
+  #seccionProduccion h1 {
+    font-size: 2.4em;
+  }
+  .contactServices {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .contactServices a h5 {
+    margin-right: 20px;
+    margin-top: 0;
+  }
+  #headerPginasExtras nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #headerPginasExtras nav a {
+    margin-bottom: 1px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contactServices {
+    display: block;
+    margin-right: 0;
+  }
+  #seccionContacto h1 {
+    font-size: 1.7em;
+  }
+  #seccionClases h1,
+  #seccionProduccion h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 350px) {
+  #infoEmpresa div {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

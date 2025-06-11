@@ -1,0 +1,41 @@
+#seccionContacto,
+#seccionClases,
+#seccionProduccion,
+#seccionVideos {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 40px;
+  background-color: lightgreen;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 70%;
+  div {
+    ul {
+      margin-right: 30px;
+      list-style: none;
+    }
+  }
+
+  h1,
+  h2,
+  ul {
+    margin-bottom: 20px;
+  }
+}
+#headerPginasExtras {
+  display: flex;
+  align-items: center;
+  h1 {
+    margin-left: 50px;
+  }
+  nav {
+    a {
+      background-color: aquamarine;
+      padding: 10px;
+      margin-left: 2px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  }
+}
