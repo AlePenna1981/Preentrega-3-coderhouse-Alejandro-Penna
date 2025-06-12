@@ -42,6 +42,18 @@
     width: 100%;
     border-radius: 0;
   }
+  #seccionVideos {
+    padding: 10px;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      video {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 622px) {
