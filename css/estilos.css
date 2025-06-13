@@ -214,6 +214,10 @@ footer img {
   border-radius: 5px;
   text-decoration: none;
 }
+#headerPginasExtras nav a:hover {
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: rgb(102, 218, 180);
+}
 
 .gridGalery {
   display: grid;
@@ -240,7 +244,8 @@ footer img {
 }
 #seccionVideos div video {
   margin: 10px;
-  width: 45%;
+  width: 50%;
+  height: 50%;
   border-radius: 5px;
 }
 
@@ -262,6 +267,20 @@ footer img {
     display: block;
     align-items: center;
   }
+  #headerPginasExtras h1 {
+    margin: auto;
+  }
+  #seccionVideos {
+    padding: 10px;
+  }
+  #seccionVideos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #seccionVideos div video {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 720px) {
   .contactServices {
@@ -279,17 +298,6 @@ footer img {
     padding: 20px;
     width: 100%;
     border-radius: 0;
-  }
-  #seccionVideos {
-    padding: 10px;
-  }
-  #seccionVideos div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #seccionVideos div video {
-    width: 100%;
   }
 }
 @media screen and (max-width: 622px) {
