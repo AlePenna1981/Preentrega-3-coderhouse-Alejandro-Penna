@@ -18,6 +18,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 10px 0px;
 }
 header h1 {
@@ -33,35 +34,13 @@ header h1::first-letter {
   font-weight: 900;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-header nav {
+header nav .contactServices {
   display: flex;
-  justify-content: space-between;
-  margin: 10px;
+  justify-content: center;
 }
-header nav a {
-  width: 144px;
-}
-
-.letraB {
-  font-size: 1.7em;
-  font-weight: 900;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.contactServices {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-.contactServices a {
-  text-decoration: none;
-}
-.contactServices a h5 {
-  color: rgb(95, 170, 95);
-  margin: 0 20px;
-}
-
-.botonContacto {
+header nav .contactServices a {
+  width: 140px;
+  margin: 3px;
   border: none;
   background-color: rgb(19, 152, 152);
   color: aliceblue;
@@ -69,12 +48,15 @@ header nav a {
   padding: 7px 28px;
   text-decoration: none;
 }
-.botonContacto:hover {
+header nav .contactServices a:hover {
   background-color: rgb(17, 97, 97);
   box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
 }
-.botonContacto a {
-  color: aliceblue;
+
+.letraB {
+  font-size: 1.7em;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #banner {
@@ -207,16 +189,23 @@ footer img {
 #headerPginasExtras h1 {
   margin-left: 50px;
 }
+#headerPginasExtras nav {
+  display: flex;
+}
 #headerPginasExtras nav a {
-  background-color: aquamarine;
-  padding: 10px;
-  margin-left: 2px;
-  border-radius: 5px;
+  width: 140px;
+  justify-content: center;
+  margin: 3px;
+  border: none;
+  background-color: rgb(19, 152, 152);
+  color: aliceblue;
+  border-radius: 9px;
+  padding: 7px 28px;
   text-decoration: none;
 }
 #headerPginasExtras nav a:hover {
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
-  background-color: rgb(102, 218, 180);
+  background-color: rgb(17, 97, 97);
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .gridGalery {
@@ -265,9 +254,11 @@ footer img {
   }
   #headerPginasExtras {
     display: block;
-    align-items: center;
   }
   #headerPginasExtras h1 {
+    margin: auto;
+  }
+  #headerPginasExtras nav a {
     margin: auto;
   }
   #seccionVideos {
@@ -283,12 +274,14 @@ footer img {
   }
 }
 @media screen and (max-width: 720px) {
-  .contactServices {
+  header {
     display: block;
-    margin-right: 70px;
   }
-  .contactServices a h5 {
-    margin: 10px 20px;
+  header h1 {
+    margin: auto;
+  }
+  header nav {
+    margin: auto;
   }
   #banner {
     width: 100%;
@@ -344,16 +337,11 @@ footer img {
   }
 }
 @media screen and (max-width: 472px) {
-  header {
-    display: block;
-  }
-  header h1 {
+  header nav .contactServices {
     margin: auto;
   }
-  header nav {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
+  header nav .contactServices a {
+    padding: 5px 10px;
   }
   #seccionContacto h1 {
     font-size: 2em;

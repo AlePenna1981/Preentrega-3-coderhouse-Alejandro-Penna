@@ -30,15 +30,21 @@
     margin-left: 50px;
   }
   nav {
+    display: flex;
     a {
-      background-color: aquamarine;
-      padding: 10px;
-      margin-left: 2px;
-      border-radius: 5px;
+      width: 140px;
+      justify-content: center;
+      margin: 3px;
+      border: none;
+      background-color: rgb(19, 152, 152);
+      color: aliceblue;
+      border-radius: 9px;
+      padding: 7px 28px;
       text-decoration: none;
+
       &:hover {
-        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
-        background-color: rgb(102, 218, 180);
+        background-color: rgb(17, 97, 97);
+        box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
       }
     }
   }

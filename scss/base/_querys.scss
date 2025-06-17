@@ -16,12 +16,13 @@
   #banner {
     width: 90%;
   }
+
   #headerPginasExtras {
     display: block;
-    align-items: center;
-  }
-  #headerPginasExtras {
     h1 {
+      margin: auto;
+    }
+    nav a {
       margin: auto;
     }
   }
@@ -39,12 +40,13 @@
 }
 
 @media screen and (max-width: 720px) {
-  .contactServices {
+  header {
     display: block;
-    margin-right: 70px;
-
-    a h5 {
-      margin: 10px 20px;
+    h1 {
+      margin: auto;
+    }
+    nav {
+      margin: auto;
     }
   }
 
@@ -113,14 +115,13 @@
 
 @media screen and (max-width: 472px) {
   header {
-    display: block;
-    h1 {
-      margin: auto;
-    }
     nav {
-      display: flex;
-      justify-content: center;
-      padding: 5px;
+      .contactServices {
+        margin: auto;
+        a {
+          padding: 5px 10px;
+        }
+      }
     }
   }
   #seccionContacto h1 {
