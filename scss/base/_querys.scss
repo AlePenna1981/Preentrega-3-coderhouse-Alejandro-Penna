@@ -22,8 +22,8 @@
     h1 {
       margin: auto;
     }
-    nav a {
-      margin: auto;
+    nav {
+      display: block;
     }
   }
   #seccionVideos {
@@ -59,6 +59,13 @@
     padding: 20px;
     width: 100%;
     border-radius: 0;
+  }
+  #seccionContacto,
+  #seccionClases,
+  #seccionProduccion,
+  #seccionVideos {
+    width: 100%;
+    margin-top: 12px;
   }
 }
 
@@ -111,11 +118,17 @@
   #seccionContacto h1 {
     font-size: 2.5em;
   }
+  #headerPginasExtras {
+    nav {
+      display: flex;
+    }
+  }
 }
 
 @media screen and (max-width: 472px) {
   header {
     nav {
+      display: block;
       .contactServices {
         margin: auto;
         a {
@@ -155,6 +168,15 @@
 }
 
 @media screen and (max-width: 420px) {
+  header {
+    nav {
+      .contactServices {
+        a {
+          margin: 1px;
+        }
+      }
+    }
+  }
   .contactServices {
     display: block;
     margin-right: 0;

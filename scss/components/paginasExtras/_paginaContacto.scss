@@ -1,0 +1,17 @@
+#seccionContacto {
+  a {
+    width: 140px;
+    margin: 3px;
+    border: none;
+    background-color: rgb(19, 152, 152);
+    color: aliceblue;
+    border-radius: 9px;
+    padding: 7px 28px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgb(17, 97, 97);
+      box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
