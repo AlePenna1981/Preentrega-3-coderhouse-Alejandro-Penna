@@ -128,8 +128,9 @@
 @media screen and (max-width: 472px) {
   header {
     nav {
-      display: block;
       .contactServices {
+        display: flex;
+        flex-direction: column;
         margin: auto;
         a {
           padding: 5px 10px;
@@ -168,19 +169,6 @@
 }
 
 @media screen and (max-width: 420px) {
-  header {
-    nav {
-      .contactServices {
-        a {
-          margin: 1px;
-        }
-      }
-    }
-  }
-  .contactServices {
-    display: block;
-    margin-right: 0;
-  }
   #seccionContacto h1 {
     font-size: 1.7em;
   }

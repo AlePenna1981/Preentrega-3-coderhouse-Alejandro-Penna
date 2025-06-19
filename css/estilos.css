@@ -26,7 +26,12 @@ body .botonGenerico {
 }
 body .botonGenerico:hover {
   background-color: rgb(17, 97, 97);
-  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 3px 5px 2px rgba(0, 0, 0, 0.3);
+}
+body .whatsappLogo {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
 header {
@@ -64,13 +69,7 @@ header nav .contactServices a {
 }
 header nav .contactServices a:hover {
   background-color: rgb(17, 97, 97);
-  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-.letraB {
-  font-size: 1.7em;
-  font-weight: 900;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  box-shadow: 5px 3px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 #banner {
@@ -83,41 +82,44 @@ header nav .contactServices a:hover {
   background-color: rgb(39, 38, 38);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-#banner .titleBanner {
-  padding: 30px;
-  background-color: rgb(186, 209, 147);
-  text-align: start;
-  margin-bottom: 10px;
-  color: rgb(55, 54, 54);
-}
-#banner .titleBanner h2 {
-  font-weight: 900;
-}
-#banner .cajaBajo1,
-#banner .cajaBajo2 {
-  width: 49%;
-}
 #banner .cajaBajo1 {
+  width: 49%;
   display: flex;
   flex-direction: column;
 }
 #banner .cajaBajo1 img {
   width: 100%;
 }
+#banner .cajaBajo1 .titleBanner {
+  padding: 30px;
+  background-color: rgb(186, 209, 147);
+  text-align: start;
+  margin-bottom: 10px;
+  color: rgb(55, 54, 54);
+}
+#banner .cajaBajo1 .titleBanner h2 {
+  font-weight: 900;
+}
+#banner .cajaBajo1 .titleBanner h2 .letraB {
+  font-size: 1.7em;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 #banner .cajaBajo2 {
+  width: 49%;
   display: flex;
   justify-content: space-around;
 }
 #banner .cajaBajo2 img {
   width: 46%;
 }
-#banner .cajaBajo3 {
+#banner .cajaBajo2 .cajaBajo3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 10px;
 }
-#banner .cajaBajo3 img {
+#banner .cajaBajo2 .cajaBajo3 img {
   width: 100%;
   height: 49%;
 }
@@ -157,12 +159,6 @@ footer img {
   border-radius: 50px;
 }
 
-.whatsappLogo {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
 #seccionContacto,
 #seccionClases,
 #seccionProduccion,
@@ -172,7 +168,7 @@ footer img {
   margin-bottom: 15px;
   padding: 15px;
   background-color: rgb(223, 223, 223);
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 3px 5px 2px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   width: 80%;
 }
@@ -221,22 +217,7 @@ footer img {
 }
 #headerPginasExtras nav a:hover {
   background-color: rgb(17, 97, 97);
-  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-#seccionContacto a {
-  width: 140px;
-  margin: 3px;
-  border: none;
-  background-color: rgb(19, 152, 152);
-  color: aliceblue;
-  border-radius: 9px;
-  padding: 7px 28px;
-  text-decoration: none;
-}
-#seccionContacto a:hover {
-  background-color: rgb(17, 97, 97);
-  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 3px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 .gridGalery {
@@ -378,10 +359,9 @@ footer img {
   }
 }
 @media screen and (max-width: 472px) {
-  header nav {
-    display: block;
-  }
   header nav .contactServices {
+    display: flex;
+    flex-direction: column;
     margin: auto;
   }
   header nav .contactServices a {
@@ -413,13 +393,6 @@ footer img {
   }
 }
 @media screen and (max-width: 420px) {
-  header nav .contactServices a {
-    margin: 1px;
-  }
-  .contactServices {
-    display: block;
-    margin-right: 0;
-  }
   #seccionContacto h1 {
     font-size: 1.7em;
   }

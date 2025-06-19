@@ -8,50 +8,50 @@
   background-color: rgb(39, 38, 38);
   font-family: Georgia, "Times New Roman", Times, serif;
 
-  .titleBanner {
-    padding: 30px;
-    background-color: rgb(186, 209, 147);
-    text-align: start;
-    margin-bottom: 10px;
-    color: rgb(55, 54, 54);
-
-    h2 {
-      font-weight: 900;
-    }
-  }
-
-  .cajaBajo1,
-  .cajaBajo2 {
-    width: 49%;
-  }
-
   .cajaBajo1 {
+    width: 49%;
     display: flex;
     flex-direction: column;
 
     img {
       width: 100%;
     }
+
+    .titleBanner {
+      padding: 30px;
+      background-color: rgb(186, 209, 147);
+      text-align: start;
+      margin-bottom: 10px;
+      color: rgb(55, 54, 54);
+
+      h2 {
+        font-weight: 900;
+        .letraB {
+          font-size: 1.7em;
+          font-weight: 900;
+          font-family: Georgia, "Times New Roman", Times, serif;
+        }
+      }
+    }
   }
 
   .cajaBajo2 {
+    width: 49%;
     display: flex;
     justify-content: space-around;
-
     img {
       width: 46%;
     }
-  }
+    .cajaBajo3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10px;
 
-  .cajaBajo3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 10px;
-
-    img {
-      width: 100%;
-      height: 49%;
+      img {
+        width: 100%;
+        height: 49%;
+      }
     }
   }
 }
