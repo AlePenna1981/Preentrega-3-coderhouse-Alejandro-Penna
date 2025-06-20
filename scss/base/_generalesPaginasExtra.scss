@@ -24,28 +24,13 @@
   }
 }
 #headerPginasExtras {
-  display: flex;
-  align-items: center;
   h1 {
     margin-left: 50px;
   }
   nav {
     display: flex;
     a {
-      width: 140px;
-      justify-content: center;
-      margin: 3px;
-      border: none;
-      background-color: $colorBotonBackground;
-      color: aliceblue;
-      border-radius: 9px;
-      padding: 7px 28px;
-      text-decoration: none;
-
-      &:hover {
-        background-color: $colorBotonBackgroundHover;
-        box-shadow: $boxShhadowGeneral;
-      }
+      @extend %botonGenerico;
     }
   }
 }

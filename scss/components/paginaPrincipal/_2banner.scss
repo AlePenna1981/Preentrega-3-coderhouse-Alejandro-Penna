@@ -1,8 +1,7 @@
 #banner {
   width: 80%;
   margin: auto;
-  display: flex;
-  justify-content: space-evenly;
+  @include flex(flex, space-evenly, none);
   border-radius: 5px;
   padding: 10px;
   background-color: rgb(39, 38, 38);
@@ -37,15 +36,14 @@
 
   .cajaBajo2 {
     width: 49%;
-    display: flex;
-    justify-content: space-around;
+    @include flex(flex, space-around, none);
+
     img {
       width: 46%;
     }
     .cajaBajo3 {
-      display: flex;
+      @include flex(flex, space-between, center);
       flex-direction: column;
-      justify-content: space-between;
       margin-left: 10px;
 
       img {

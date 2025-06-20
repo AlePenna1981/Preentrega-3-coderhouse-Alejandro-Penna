@@ -1,7 +1,7 @@
 #seccionVideos {
   div {
-    display: flex;
-    justify-content: center;
+    @include flex(flex, center, center);
+
     video {
       margin: 10px;
       width: 50%;

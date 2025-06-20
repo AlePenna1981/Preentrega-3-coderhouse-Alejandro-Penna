@@ -1,8 +1,5 @@
-// header
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(flex, space-between, center);
   margin: 10px 0px;
 
   h1 {
@@ -22,22 +19,9 @@ header {
 
   nav {
     .contactServices {
-      display: flex;
-      justify-content: center;
+      @include flex(flex, center, center);
       a {
-        width: 140px;
-        margin: 3px;
-        border: none;
-        background-color: $colorBotonBackground;
-        color: aliceblue;
-        border-radius: 9px;
-        padding: 7px 28px;
-        text-decoration: none;
-
-        &:hover {
-          background-color: $colorBotonBackgroundHover;
-          box-shadow: $boxShhadowGeneral;
-        }
+        @extend %botonGenerico;
       }
     }
   }

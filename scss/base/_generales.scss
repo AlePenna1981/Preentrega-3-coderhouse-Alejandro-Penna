@@ -15,21 +15,7 @@ body {
   font-variation-settings: "wdth" 100;
   text-align: center;
   background-color: #fff;
-  .botonGenerico {
-    width: 140px;
-    margin: 3px;
-    border: none;
-    background-color: $colorBotonBackground;
-    color: aliceblue;
-    border-radius: 9px;
-    padding: 7px 28px;
-    text-decoration: none;
 
-    &:hover {
-      background-color: $colorBotonBackgroundHover;
-      box-shadow: $boxShhadowGeneral;
-    }
-  }
   .whatsappLogo {
     position: fixed;
     bottom: 10px;
