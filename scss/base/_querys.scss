@@ -1,5 +1,5 @@
 // Media queries
-@media screen and (max-width: 942px) {
+@media screen and (max-width: 950px) {
   #infoEmpresa {
     div {
       padding: 20px;
@@ -8,7 +8,7 @@
   }
 }
 
-@media screen and (max-width: 858px) {
+@media screen and (max-width: 870px) {
   #infoServicios {
     padding: 20px;
     width: 90%;
@@ -23,15 +23,14 @@
       margin: auto;
     }
     nav {
-      display: block;
+      @include flex(flex, center, center);
     }
   }
   #seccionVideos {
     padding: 10px;
     div {
-      display: flex;
+      @include flex(flex, center, center);
       flex-direction: column;
-      align-items: center;
       video {
         width: 100%;
       }
@@ -39,7 +38,7 @@
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 770px) {
   header {
     display: block;
     h1 {
@@ -69,35 +68,17 @@
   }
 }
 
-@media screen and (max-width: 622px) {
+@media screen and (max-width: 650px) {
   #infoServicios {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-
+    @include flex(flex, center, center);
     div {
       margin-top: 19px;
     }
   }
-  #headerPginasExtras {
-    h1 {
-      margin: auto;
-    }
-    nav {
-      display: block;
-    }
-  }
 }
 
-@media screen and (max-width: 530px) {
-  .contactServices {
-    display: block;
-    margin-right: 0;
-  }
-  .botonContacto {
-    padding: 5px 20px;
-    text-decoration: none;
-  }
+@media screen and (max-width: 580px) {
   #banner {
     display: block;
     .cajaBajo1,
@@ -115,17 +96,9 @@
       margin: 10px 50px;
     }
   }
-  #seccionContacto h1 {
-    font-size: 2.5em;
-  }
-  #headerPginasExtras {
-    nav {
-      display: flex;
-    }
-  }
 }
 
-@media screen and (max-width: 472px) {
+@media screen and (max-width: 550px) {
   header {
     nav {
       .contactServices {
@@ -146,35 +119,11 @@
     font-size: 2.4em;
   }
 
-  .contactServices {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-
-    a h5 {
-      margin-right: 20px;
-      margin-top: 0;
-    }
-  }
   #headerPginasExtras {
     nav {
-      display: flex;
       flex-direction: column;
-      align-items: center;
-      a {
-        margin-bottom: 1px;
-      }
+      @include flex(flex, center, center);
     }
-  }
-}
-
-@media screen and (max-width: 420px) {
-  #seccionContacto h1 {
-    font-size: 1.7em;
-  }
-  #seccionClases h1,
-  #seccionProduccion h1 {
-    font-size: 2em;
   }
 }
 

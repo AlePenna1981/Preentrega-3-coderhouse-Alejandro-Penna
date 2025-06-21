@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900&family=Roboto:ital,wght@0,100..900&family=Special+Gothic&display=swap");
 #seccionContacto a, #headerPginasExtras nav a, #videos a, #infoServicios .card .card-body a, header nav .contactServices a {
-  width: 140px;
+  width: 138px;
   margin: 3px;
   border: none;
   background-color: rgb(19, 152, 152);
@@ -222,13 +222,13 @@ footer img {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 942px) {
+@media screen and (max-width: 950px) {
   #infoEmpresa div {
     padding: 20px;
     margin: 10px 100px;
   }
 }
-@media screen and (max-width: 858px) {
+@media screen and (max-width: 870px) {
   #infoServicios {
     padding: 20px;
     width: 90%;
@@ -243,21 +243,24 @@ footer img {
     margin: auto;
   }
   #headerPginasExtras nav {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #seccionVideos {
     padding: 10px;
   }
   #seccionVideos div {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   #seccionVideos div video {
     width: 100%;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 770px) {
   header {
     display: block;
   }
@@ -284,31 +287,18 @@ footer img {
     margin-top: 12px;
   }
 }
-@media screen and (max-width: 622px) {
+@media screen and (max-width: 650px) {
   #infoServicios {
-    display: flex;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
   #infoServicios div {
     margin-top: 19px;
   }
-  #headerPginasExtras h1 {
-    margin: auto;
-  }
-  #headerPginasExtras nav {
-    display: block;
-  }
 }
-@media screen and (max-width: 530px) {
-  .contactServices {
-    display: block;
-    margin-right: 0;
-  }
-  .botonContacto {
-    padding: 5px 20px;
-    text-decoration: none;
-  }
+@media screen and (max-width: 580px) {
   #banner {
     display: block;
   }
@@ -323,14 +313,8 @@ footer img {
     padding: 10px;
     margin: 10px 50px;
   }
-  #seccionContacto h1 {
-    font-size: 2.5em;
-  }
-  #headerPginasExtras nav {
-    display: flex;
-  }
 }
-@media screen and (max-width: 472px) {
+@media screen and (max-width: 550px) {
   header nav .contactServices {
     display: flex;
     flex-direction: column;
@@ -346,31 +330,11 @@ footer img {
   #seccionProduccion h1 {
     font-size: 2.4em;
   }
-  .contactServices {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-  }
-  .contactServices a h5 {
-    margin-right: 20px;
-    margin-top: 0;
-  }
   #headerPginasExtras nav {
-    display: flex;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
-  }
-  #headerPginasExtras nav a {
-    margin-bottom: 1px;
-  }
-}
-@media screen and (max-width: 420px) {
-  #seccionContacto h1 {
-    font-size: 1.7em;
-  }
-  #seccionClases h1,
-  #seccionProduccion h1 {
-    font-size: 2em;
   }
 }
 @media screen and (max-width: 350px) {
