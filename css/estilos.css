@@ -3,15 +3,17 @@
   width: 138px;
   margin: 3px;
   border: none;
-  background-color: rgb(19, 152, 152);
+  background-color: rgb(59, 153, 153);
   color: aliceblue;
   border-radius: 9px;
   padding: 7px 28px;
   text-decoration: none;
+  transition: 0.3s;
 }
 #seccionContacto a:hover, #headerPginasExtras nav a:hover, #videos a:hover, #infoServicios .card .card-body a:hover, header nav .contactServices a:hover {
   background-color: rgb(17, 97, 97);
   box-shadow: 5px 3px 5px 2px rgba(0, 0, 0, 0.3);
+  width: 10rem;
 }
 
 * {
@@ -27,7 +29,7 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   text-align: center;
-  background-color: #fff;
+  background: linear-gradient(to left, #ffffff, rgb(199, 249, 255));
 }
 body .whatsappLogo {
   position: fixed;
