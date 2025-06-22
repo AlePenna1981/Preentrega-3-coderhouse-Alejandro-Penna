@@ -12,12 +12,13 @@ $backgorundColorExtra: rgb(223, 223, 223);
   border-radius: 9px;
   padding: 7px 28px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.3s ease-out;
 
   &:hover {
     background-color: $colorBotonBackgroundHover;
     box-shadow: $boxShhadowGeneral;
-    width: 10rem;
+    width: 9.2em;
+    transform: scale(1.06);
   }
 }
 
