@@ -10,14 +10,20 @@
   border-radius: 5px;
   margin-bottom: 10px;
   .card {
-    transition: 0.5s;
+    transition: 0.3s;
     &:hover {
       transform: scale(1.05);
       box-shadow: $boxShhadowGeneral;
     }
     .card-body {
+      @include flex(flex, center, center);
+      flex-direction: column;
       a {
+        width: 180px;
         @extend %botonGenerico;
+        &:hover {
+          width: 190px;
+        }
       }
     }
   }

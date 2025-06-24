@@ -1,4 +1,6 @@
 #videos {
+  height: 40px;
+  @include flex(flex, center, center);
   a {
     @extend %botonGenerico;
   }
