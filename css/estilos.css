@@ -224,6 +224,15 @@ footer img:hover {
 #headerPginasExtras nav {
   display: flex;
 }
+#seccionContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#seccionContacto .mb-3 {
+  width: 98%;
+}
 .gridGalery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

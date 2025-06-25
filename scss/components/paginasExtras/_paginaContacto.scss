@@ -1,4 +1,10 @@
 #seccionContacto {
+  @include flex(flex, center, center);
+  flex-direction: column;
+  .mb-3 {
+    width: 98%;
+  }
+
   a {
     @extend %botonGenerico;
   }
