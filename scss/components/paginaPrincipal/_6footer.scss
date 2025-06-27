@@ -3,6 +3,7 @@ footer {
   padding: 15px;
   @include flex(flex, space-evenly, center);
   background-color: $backgorundColorExtra;
+  // background-color: rgb(230, 228, 228);
 
   img {
     width: 4em;
